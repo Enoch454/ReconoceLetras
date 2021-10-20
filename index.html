@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <script src="assets/js/app.js"></script>
+</head>
+
+<body id="page-top" onload="init()" >
+    
+    <header class="h-100 masthead" style="background-image:url('assets/img/bg-masthead.jpg');">
+        <div class="container my-0 text-left">
+            <h1 class="mb-1">Numeros y letras</h1>
+            <h3 class="mb-5"><em>Escribe un numero o letras en el lienzo</em></h3>
+            <div class="overlay"></div>
+        </div>
+
+        <div class="container my-0 text-left" >
+            <div class="row">
+                <div class="col-4">
+                    <canvas id="can" width="100" height="100" style="border:2px solid; background-color: white;"></canvas>
+                    <div class="div-botones">
+                        <button type="button" class="btn btn-dark" id="black" onclick="color(this)">Pencil</button>
+                        <button type="button" class="btn btn-light" id="white" onclick="color(this)">Eraser</button>    
+                    </div>
+                    <div class="div-botones">
+                        <button type="button" class="btn btn-success" id="btn" onclick="predecir()">Save</button>
+                        <button type="button" class="btn btn-danger" id="clr" onclick="erase()">Clear</button>        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h3>Escribiste ... </h3>
+                    <h2 id="resultado">--</h2>
+                    <h4>* tal vez me equivoque, 'toy chiquito :')</h4>
+                    <canvas id="smallcan" width="28" height="28"></canvas>
+                </div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+    
+    </header>
+
+    
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/stylish-portfolio.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script src="assets/js/modelo.js"></script>
+
+</body>
+
+</html>

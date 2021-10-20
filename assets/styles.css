@@ -1,0 +1,18 @@
+.masthead {
+    padding-top: 4rem;
+}
+
+.container{
+    max-width: 1820px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+.div-botones{
+    padding-bottom: 5px;
+}
+
+#smallcan{
+    display: none;
+}
